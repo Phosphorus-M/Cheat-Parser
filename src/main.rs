@@ -52,11 +52,11 @@ fn main() {
     let parser = EventReader::new(file);
 
     let mut new_cheat = Cheat {
-        name: String::new(),
+        name: String::from("(new AR code)"),
         code: String::new(),
     };
     let mut new_category = Category {
-        name: String::new(),
+        name: String::from("(new category)"),
         id: String::new(),
         cheats: vec![],
     };
@@ -140,7 +140,7 @@ fn main() {
                         if new_cheat.name != "" && new_cheat.code != "" {
                             new_category.cheats.push(new_cheat.clone());
                             new_cheat = Cheat {
-                                name: String::new(),
+                                name: String::from("(new AR code)"),
                                 code: String::new(),
                             };
                         }
