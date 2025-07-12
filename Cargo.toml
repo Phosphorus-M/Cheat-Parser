@@ -1,5 +1,5 @@
 [package]
-name = "curso_rust_2021"
+name = "cheat_parser"
 version = "0.1.0"
 edition = "2021"
 
